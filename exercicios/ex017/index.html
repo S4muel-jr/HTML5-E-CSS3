@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com fontes em cc</title>
+    <style>
+        body{ background-image: linear-gradient(90deg,#B5FED9,#98CBB4);
+            font-family: Verdana, 'Geneva Tahoma', sans-serif ;
+            font-size:1em; 
+            font-weight:lighter ;/*normal , lighter , bold , bolder.*/
+             font-style: italic;  /* estilo da fonte */  
+/*OBS: a familia da fonte tem que suportar essas configuracoes caso nao suporte mude a configuracao/fonte .*/
+            /* sempre termine com uma fonte generica nesse caso san-serif/ serif*/
+        
+            /* medidas absolutas 
+               cm,mm,in polegadas , pt ponto,px-pixel,pc.   
+               
+               medidas relativas 
+               em, ex, rem , vw, vh, %
+               medidas recomendada a usar sao: em, px.
+               16px geralmente = 1em
+
+            */
+           
+        }
+        h1{
+            font-family: Verdana, 'Geneva Tahoma', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* podemos condensar todas as configuracoes de fonte : shorthand font*/
+            /*ordem para a configuracao :1-font-style,2-font-weight , 3-font-size, 4-font-family.*/
+            
+            font:italic bolder 3em
+            'work sans ', sans-serif;
+        }
+        main{
+            width: 550px;
+            background-color:#FFB8D1;
+            padding: 10px;
+            margin: auto;
+           
+            h1{
+                color:#435058;
+                text-shadow: 1px 1px 2px rgba(39, 46, 51, 0.863);
+               
+            }
+            h2{color: #CF5C36;
+                
+                text-shadow: 1px 1px 2px rgba(92, 41, 24, 0.829) ;
+            }
+            box-shadow: 1px 1px 5px rgba(105, 78, 87, 0.877);
+        }
+      
+     
+    </style>
+</head>
+<body>
+    <h1>trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita in eius fuga, facilis quam fugiat? Excepturi recusandae sint dolorem. Illo, suscipit. Quibusdam ea ut repellat nobis voluptatibus eaque vitae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione placeat rerum explicabo adipisci harum, iste non quos, in incidunt maiores illo quam laboriosam. Consequuntur fugiat voluptatem nisi ipsa cum eaque.</p>
+    <h2>subtitulo do exercicio</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nihil expedita. Impedit eveniet debitis est cupiditate aperiam voluptas quos explicabo ipsam ducimus saepe voluptate voluptatem perferendis, similique animi corrupti numquam.
+    </p>
+    <main>
+
+        <h1 style="text-align: center;">titulo </h1>
+        <h2>sub-titulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, deleniti? Adipisci quaerat cum maiores eligendi perspiciatis hic voluptatum officia cupiditate! Quae numquam distinctio iste perferendis, exercitationem temporibus repellat optio incidunt.</p>
+        <h2>sub titulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, at magni ad quasi doloribus quae molestias facilis nesciunt, quam necessitatibus est soluta cumque non laudantium sequi aliquid optio nisi laborum!</p>
+    </main>
+</body>
+</html>

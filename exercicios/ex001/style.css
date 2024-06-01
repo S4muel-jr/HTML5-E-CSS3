@@ -1,0 +1,10 @@
+@charset "UTF-8"; 
+/*REGRA DE @CHARCET CASO HAJA PROBLEMAS COM ACENTUACAO*/
+body{
+    background-image:linear-gradient(90deg, blue , white ) }
+h1{
+   
+   background-clip:text;
+    -webkit-text-fill-color: transparent;
+ 
+}

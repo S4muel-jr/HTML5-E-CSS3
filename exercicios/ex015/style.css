@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*REGRA DE @CHARCET CASO HAJA PROBLEMAS COM ACENTUACAO*/
+body{font-family:Arial, Helvetica, sans-serif;
+
+   background-color: rgba(0, 255, 255, 0.199);
+    font-size:20px;
+    color:black;
+}
+
+h1{
+    font-family: "franklin gothic medium ", "arial narrow ", arial, sans-serif;
+    color: rgb(6, 115, 122);
+}
+
+p{
+    text-align:justify ;
+    font-family: Georgia,serif;
+    
+}
+h2{
+    font-family: "times new roman", 'Times New Roman', Times, serif;
+    color: rgb(33,136,161);
+}
+button{
+    background-color:rgb(169, 199, 255);
+    color: black;
+}

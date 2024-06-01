@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body{
+    background-image:linear-gradient(90deg, #BFEDEF,#98E2C6);
+    font-family: Verdana, 'Geneva Tahoma', sans-serif;
+    
+}
+#principal {
+    text-align: center;
+    background-color: blue;
+    color: white;
+
+}
+h1{
+    background-color:#344966;
+  color: white;
+
+}
+
+.avancado{
+  background-color:#FFCA3A;
+  color: white;
+}
+ .basico {
+      background-color:#4DAA57;
+    }
+    .intermediario{
+      background-color: #29E7CD;
+      
+    }
+    p{
+      width: 400px;
+      background-color: wheat;
+      text-indent: 30px;
+      
+      
+    }
+    div > p {
+      display: none;
+    }
+    div:hover > p{
+      display: block;
+      background-color: yellow;
+    }

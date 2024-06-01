@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{ 
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            color: red;
+            text-decoration: none;/* remove o sublinhado do link.*/
+        }
+         a:visited{ /*muda a cor do link quando visitado*/
+
+            color: darkred;
+        }
+      a:hover{
+        color: aqua;
+           text-decoration: underline;/* mostra o sublinhado quando passa o mouse por cima.*/
+        }
+        a:active{
+            color: #1fe61f;
+            /*mudar a cor do link quando clica*/
+        } 
+        .especial{
+            background-color: #cfeecf;
+        }
+       .especial::before{
+        content:'✓';
+       }
+       .especial::after{/* ::after significa depois*/
+        content: '✓';
+       }
+     .div-centralizada{
+        box-sizing: 12px 12px;
+     }
+     footer{
+        background-color: #1fe61f;
+        
+     }
+    </style>
+</head>
+<body>
+    <h1>personalisando links</h1>
+    <ul>
+        <li><a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" class="especial">adoble color</a></li>
+
+        <li><a href="https://paletton.com/#uid=11R0u0kB5Y5l1XbroXWX7SLUuur"target="_blank">paletton</a></li>
+        <li><a href="https://coolors.co/3c1518-69140e-a44200-d58936-fff94f"target="_blank"class="especial">collors</a></li>
+    <div  class="div-centralizada">
+      
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, architecto repudiandae reprehenderit pariatur soluta, iste voluptates quo deserunt rem aliquid ipsum expedita ipsa vitae dolor mollitia rerum? Animi, voluptatem temporibus?</p>
+    </div>
+    <footer>
+        ai dentro macho 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*REGRA DE @CHARCET CASO HAJA PROBLEMAS COM ACENTUACAO*/
+
+
+    *{ 
+        /*height:55%;*/
+        font-family:justify ;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+   
+   body {
+    background-image:linear-gradient(to right,#5BC0EB ,#CAE7B9);
+    background-attachment:fixed;
+     
+   }
+ span{
+    color: red;
+ }
+ abbr{
+    text-decoration: none;
+    color: red;
+    font-size: 1em;
+    font-family: initial;
+ }
+   main {
+            background-color: white;/* define a cor do box/caixa*/
+            width: 550px; /* define a largura do box/caixa */
+           
+            padding: 10px; /* define um espaço no inicio e final do texto na caixa/box*/
+            margin: auto; /* centraliza o bloco de texo na pagina , independete do tamanho da janela*/
+            border-radius: 10px;/* arredonda raio da borda */
+            box-shadow: 5px 5px 15px rgba(98, 110, 91, 0.847);/*  cria uma sombra no box/caixa*/
+   } 
+   h1 { text-align: center;/* centraliza o titulo na pagina*/
+   
+    text-shadow:1px 1px 2px #11172ee1; /*cria uma sombra no titulo*/
+    /*ha tres px sao eles: 1:locamento lateral , 2:locamento para baixo , 3:espalhamento . por ultimo adicionar a cor que sera da sombra .*/
+color:#273469 ;
+font-size: 25px;
+   }
+   h2{
+    color:#EC9F05 ;
+    font-size:1.5em;
+   }
+   
+   p{
+    text-align: justify;
+    text-indent: 20px;
+    font-family: Verdana, 'Geneva Tahoma', sans-serif;
+   }
