@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+
+        }
+        caption{
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        tr,th , td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: aquamarine;
+
+        }
+        .csexo{
+            background-color: #f05656;
+
+        }
+        .cIdade{
+            background-color: #5555ec;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Exercicio de Tabelas
+    </h1>
+    <table>
+         <colgroup> <!--  PERSONALISAÇÃO DE COLUNAS
+                Tag <colgroup> 
+             utilizada para dar class de maneira mais rapido para as colunas.
+              
+             EX: <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+             </colgroup> 
+
+                a propriedade span="2" serve para espandir 2  coluna sequnecial , por exemplo,  sua  configuracao da primeira sera espandida / copiada para a proxima coluna.  -->
+
+        <col class="cnome" >
+        <col class="csexo"span="2">
+        <col class="cIdade">
+        
+    </colgroup>
+        <caption> Cadastro</caption>
+        
+        <tr>
+            <th  scope="col">  Nome </th>
+            <th scope="col"> Sexo</th> 
+            <th scope="col">Idade </th>  
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Desenvolvedor</td>
+
+        </tr>
+        <tr>
+            <td>Joana </td>
+            <td>F</td>
+            <td>26</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+</body>
+</html>

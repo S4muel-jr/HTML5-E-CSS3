@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: #00640093;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+            background-color: white;
+            position: relative;
+            
+        }
+        tbody > tr:nth-child(odd) { /* pseudoclasse :nth-child () define um efeito zebrado.
+            (odd) , (2n-1)- define o efeito zebrado pelo numero impar
+            (even) ,(2n)define o efeito zebrado pelo numero par */
+            /* dentor dos parenteses pode clocar o numero de sua preferencia contanto que saiba q esse numero definira o efeito zebrado */
+            background-color: #7c79759f;
+
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: aqua;
+            top: -1px;
+
+        }
+        thead, tfoot{
+            background-color: aqua
+            ;
+            color: black;
+        }
+          td ,th{
+            border: 1px solid black;
+                padding: 10px
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <!--        ANATOMIA DE TABELAS GRANDES
+                    TABLE
+                    caption ( legenda da tabela)
+                        THEAD ( cabecalho )
+                                 tr,td,th
+                        TBODY (corpo )
+                                tr,td,th
+
+                        TFOOT ( rodape) 
+                        tr,td,th-->
+
+                        <table>
+                            <caption> Poulacao federativa</caption>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        EStado
+                                    </th>
+                                    <th>
+                                        Populacao 
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sao paulo</td>
+                                    <td class="num">20 673 280</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                        Minas gerais 
+                                    </td>
+                                    <td class="num">
+                                        4 963 704
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>Rio de Janeiro</td>
+                                    <td class="num" >11 760 550	</td>
+                                 </tr>
+                                 <tr>
+                                        <td>Distrito Federal</td>
+                                        <td class="num">3 858 760</td>
+                                  
+                                 </tr>
+                                 <tr>
+                                    <td>	Pernambuco</td>
+                                    <td class="num">3 783 639	</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Rio Grande do Sul</td>
+                                    <td class="num">3 679 298</td>
+                                 </tr>
+                                 <tr>
+                                    <td>	Ceará</td>
+                                    <td class="num">3 424 978	</td>
+                                 </tr>
+                                 <tr>
+                                    <td>	Paraná</td>
+                                    <td class="num">3 382 210</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Bahia</td>
+                                    <td class="num">3 320 568	</td>
+                                 </tr>
+                                 <tr>
+                                    <td>	Goiás</td>
+                                    <td class="num">2 481 043	</td>
+                                 </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Total de habitantes</th>
+                                    <td class="num"><strong>61 328 027</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi libero mollitia expedita pariatur impedit corporis odit, quasi quas aliquam temporibus facilis nulla earum vel iusto ad nobis in eum a.
+                        Quas minus sit consectetur maiores, nam eum voluptates laborum expedita facilis optio repellendus eaque odio magni soluta. Corporis aliquam ipsam voluptas, eius ad reiciendis rerum praesentium qui tempore illo necessitatibus.
+                        Velit tempora quo culpa? Rem rerum inventore dolores dolore iste quisquam, fugiat, explicabo sapiente dicta omnis ad aliquam officia ratione quasi dignissimos? Quasi nemo velit debitis dolorum corporis fugiat optio.
+                        Ullam dolorum sed harum. Suscipit beatae impedit doloribus, ad provident accusamus corporis rerum reprehenderit vel velit. Id aspernatur corrupti ad soluta, dolores ducimus doloremque, esse veniam nesciunt, eos harum repellendus!
+                        Magni illo eos id iste saepe animi ea architecto, cumque ipsum, soluta blanditiis natus provident, inventore molestiae voluptas in laudantium nam! Impedit omnis, suscipit ipsum maiores accusamus at? Molestiae, perspiciatis!
+                        Repudiandae quisquam quam eius quas, quasi iste cum nulla impedit dolor eaque numquam molestias? Quidem qui ratione odio natus culpa magnam reprehenderit deleniti ut assumenda quis, asperiores aliquid illum libero?
+                        Tempora ipsum magnam sit aliquam sunt, consequatur voluptatibus ipsam itaque libero, voluptatum odit, dicta repellat repellendus? Ullam corrupti praesentium quis laboriosam voluptate. Quibusdam, minima et id repellat nesciunt possimus sed?
+                        Voluptatum, sunt quae! Laborum ullam exercitationem doloremque a sequi esse itaque veritatis nihil iste sit. Iste harum fugiat consequuntur animi. Sequi repudiandae voluptates sapiente laudantium excepturi aliquam perspiciatis totam aperiam?
+                    </p>    
+                    </body>
+</html>
+
