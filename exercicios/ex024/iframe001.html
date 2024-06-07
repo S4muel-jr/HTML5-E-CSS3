@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframes</title>
+</head> 
+<style>
+    iframe{
+        height: 400px;
+        width: 400px;
+    }
+</style>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" scolling="yes"></iframe>
+        <!-- iframe é uma caixa do tipo inline
+            src- pode colocar o link do site que ele te mostrara o  site na sua pagina em miniatura , porem alguns site utiliza uma protecao negando que terceiros faca isso .
+                frameborder- retira a borda do quadrado -->
+        para aprender a programar.
+    </p>
+    <p> Meu repositorio é bem legal
+        <iframe src="https://github.com/S4muel-jr" frameborder="0">
+           <!-- tamanho padrao de um iframe e de 300x150 -->
+           <!-- scolling="no"- tira a barra de rolagem lateral do iframe , em alguns navegador esta funcionando 
+             scolling="yes" - deixa a barra de rolagem lateral 
+             scolling="auto" - ajusta automaticamente caso tenha barra de rolagem lateral-->
+            
+        </iframe>
+    </p>
+</body>
+</html>
