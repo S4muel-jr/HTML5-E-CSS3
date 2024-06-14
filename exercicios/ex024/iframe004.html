@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>
+        Meu site principal
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, unde excepturi. Itaque, quisquam aliquam? Aspernatur quia doloribus enim excepturi adipisci praesentium ex placeat officiis omnis deleniti! Ad, similique? Excepturi, laborum?</p>
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer" >
+        <!-- sandbox="sandbox" - utilizado nos iframes para aumentar sua seguranca e nao enviar dados do usuario .
+         conseguimos colocar mais de uma permissao para os iframe separadas por espaço, as permissoes que nao foi escrita sera bloqueada :
+         allow-same-origin - permite o conteudo da mesma origem .
+         allow-forms- permite  formularios.
+         allow-script- permite o script.
+         
+        referrerpolicy="no-referrer" - utilizado para nao coletar informacoes do usuario-->
+        <p>seu navegador nao e compativel com essa configuração</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt hic obcaecati quas, optio, doloribus expedita sequi amet, ullam beatae illo consectetur quibusdam adipisci repellat! Adipisci beatae ipsa sed officia architecto.</p>
+</body>
+</html>
