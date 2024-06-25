@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        main{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+
+        }body{
+            background: url(foto-m.png) center center no-repeat fixed;
+           
+        }
+        
+    </style>
+</head>
+<body>
+   
+        <h1>meu primeiro Formulario</h1>
+  <!-- autocomplete="off"   desliga a sugestao de preenchimento nos inputs 
+   action="cadastro.js" - envia os dados para a linguagem de programacao-->
+            <form action="cadastro.js" method="get" autocomplete="off">
+                <h1>Formularios</h1>
+                <p><label for="inome">nome</label>
+
+                     <input type="text" name="nome" id="inome"></p>
+
+                <!-- input - cria a caixa onde sera digitado o dado
+                 type- define o tipo de dado que sera recebido .
+                 input type="submit" - cria um botao que enviara os dados
+                 value - define o nome do botao -->
+                <!-- <label>  - label relaciona objeto de formulario e sua etiqueta.
+
+                 for="inome" nome do id (inome) para relacionar o input -->
+
+                <p><label for="isobrenome">sobrenome </label>
+                    <input type="text" name="sobrenome" id="isobrenome"></p>
+
+                <p><input type="submit" value="enviar"></p>
+            </form>
+            <!-- existe dois metodos de envios de dados :
+
+              method="get" - metodo padrao mostra os dados na url, utilizado para dados nao sensiveis , como : (nome, peso, url, alrtura). utlizavel ate tres mil bytes.
+
+              method="post" -utilizado para dados sensiveis como: (senhas , dados de cartao , endereço). ele oculta os dados da url porem ainda tem outra maneira de visualizar esses dados pelo inspecionar. utlizavel para envio de arquivo . acima de 3mil bytes
+
+              para aumentar a segurança de envios de dados , e preciso estudar https. -->
+      
+</body>
+</html>
