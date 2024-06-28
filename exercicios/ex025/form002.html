@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+            ;
+            background: url(foto-m.png) no-repeat center center fixed;
+            background-size: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+    <p>
+        <label for="iusu">Usuários:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do Usuários" autocomplete="username">
+        <!-- 
+        required - utilizado para tornar o input obrigatorio.
+
+        minlength="5"- define uma quantidade minima de caracter.
+
+         maxlength="15" - define uma quantidade maxima de caracter.
+
+         size="10" - delimita o tamanho/quantidade de caracter mostrado no input.
+
+         placeholder="nome do Usuários" - escreve o que  sera que o usuario tera que digitar.
+
+         podemos usar o atributo ( autocomplete="") para sugerir ou buscar do navegador a informaçao salvas: nomes , senhas , etc  para os inputs ( nomes, senhas , sexo , nome de empresa, etc) .
+         
+         autocomplete="current-password"- senha que ja esta cadastrada.
+          nova senha(autocomplete="new-password")
+
+         autocomplete="username" - nome de usuario.-->
+
+    </p> 
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" size="10" placeholder="min. 8 caracter" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <!-- type="submit" - butao para enviar dados
+             type="reset" - butao para limpa os dados da caixa
+              -->
+    </p>
+</form>
+</body>
+</html>
