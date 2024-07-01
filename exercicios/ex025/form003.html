@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>teste de formulario </h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome " id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="username">
+    </p>
+    <p>
+        <label for="imedia">Media</label>
+        <input type="number"  id="imedia" min="0" max="10" step="0.5" value="0"  required>
+
+        <!-- min="0" e max="10" - utilizados para limitar a quantidade de numeros nos imputs
+         value="2" - atribui um valor para os imputs e outras caixas.
+          type="month"- define que o input sera do tipo mes e ano .
+          type="date" define que o input sera do tipo dia, mes e ano -->
+    </p>
+    <p>
+        <label for="imes">Periodo letivo</label>
+        <input type="month" name="mes" required id="imes" value="2024-06">
+    </p>
+    <p>
+        <label for="idata">Dia da prova</label>
+        <input type="date" name="data" id="idata" required>
+    </p>
+    <p>
+        <label for="ihora"> Hora da prova</label>
+        <input type="time" name="hora" id="ihora" >
+    </p>
+    <p>
+        <label for="itel">Telefone</label>
+        <input type="tel" required name="tel " id="itel" placeholder="(DD) 9 0000-0000" minlength="9" maxlength="11"> 
+    </p>
+    <p>
+        <label for="icpf">CPF</label>
+        <input type="tel" required name="cpf " id="icpf" placeholder="000-000-000-00" minlength="11" maxlength="11" > 
+    </p>
+    
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>
