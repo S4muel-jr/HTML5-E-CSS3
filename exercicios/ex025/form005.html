@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+</head>
+<style>
+    body{
+        background:url(foto-m.png) center center no-repeat fixed;
+        background-size: cover;
+    }
+</style>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <!-- no input tipo radios o (name)- tera o mesmo nome caso tenha mais de um input .
+             checked - deixa marcado o input tipo radios.  -->
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="imas" > <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"> <label for="ifem">Femenino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basquete </label><br>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut"> Futebol</label> <br>
+            <label for="iesvo"><input type="checkbox" name="esvo" id="iesvo"> Volei</label>  <br>
+            <label for="ieste"><input type="checkbox" name="esrte" id="ieste"> Tenis</label>  <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

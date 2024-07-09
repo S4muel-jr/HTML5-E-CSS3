@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+          
+        <p>
+            <label for="iano">em que ano voce nasceu?</label>
+            <input type="number" max="2024" min="1900 " required  oninput="calcidade()" name="ano" id="iano">
+        </p>
+        <p>
+            <label for="iidade"> sua idade é?</label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input  type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+    </form>
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value) 
+        }
+    </script>
+</body>
+</html>

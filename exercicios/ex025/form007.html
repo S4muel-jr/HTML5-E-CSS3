@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+           <p>
+            <label for="iest">Estado</label required>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sul" >
+                    <option value="MG"> Minas Gerais</option>
+                    <option value="RJ" > Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="PE"> Pernambuco</option>
+                    <option value="RN"> Rio G. do Norte</option>
+                    <option value="PB"> Paraiba</option>
+
+                </optgroup>
+            </select>
+           </p>
+           <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof" required>
+            <datalist id="listprof">
+                <option >Médico</option>
+                <option>Desenvolvedor</option>
+                <option >Vendedor</option>
+
+            </datalist>
+           </p>
+           <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" placeholder="sua mensagem..." rows="10"></textarea>
+           </p>
+<!--  <textarea name="msg" id="imsg" cols="30" ></textarea> permite que o usuario escreva uma mensagem .
+  rows="10" - define a quantidade de linhas .
+   cols="30" colunas-->
+
+        <p>
+            <input class="butao" type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+    </form>
+</body>
+</html>
