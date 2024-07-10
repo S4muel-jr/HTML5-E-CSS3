@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* estilos para tela */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+    }
+
+ header{
+        background-color: aquamarine;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    menu ul{
+        background-color: #707070;
+        list-style-type: none;
+    }
+
+ menu li{
+    background-color: #5f5d5d;
+    color: white;
+display: inline-block;
+margin:  10px;
+padding: 10px;
+    }
+
+    article{
+        display: block;
+        margin: auto;
+    max-width: 600px;
+
+    }
+
+
+
+    
