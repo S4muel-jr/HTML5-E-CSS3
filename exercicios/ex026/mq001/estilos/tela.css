@@ -17,15 +17,28 @@ html{
 
     header h1{
         text-align: center;
+       
+    }
+    h1,h2{
+       padding:  30px;
     }
 
     menu ul{
         background-color: #707070;
         list-style-type: none;
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        background-image: linear-gradient(90deg, aqua , blue);
+        padding: 5px;
+        transition: 0.5s;
+    }
 
  menu li{
-    background-color: #5f5d5d;
+   
     color: white;
 display: inline-block;
 margin:  10px;
